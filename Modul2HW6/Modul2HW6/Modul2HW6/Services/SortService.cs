@@ -4,18 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Modul2HW6.Models;
+using Modul2HW6.Services.Abstractions;
 
 namespace Modul2HW6.Services
 {
-    public class SortService : IComparer<>
+    public class SortService : IComparer<ElectricalAppliances>
     {
-        private readonly ElectricalAppliances[] _animals;
-        private readonly ISafariParkSectionService _safariParkSectionService;
+        private readonly ElectricalAppliances[] _electricalAppliances;
+        private readonly IElectricalAppliancesService _appliancesService;
 
-        public SortService(ISafariParkSectionService safariParkSectionService)
+        public SortService(IElectricalAppliancesService electricalAppliancesService)
         {
-            _safariParkSectionService = safariParkSectionService;
-            _animals = _safariParkSectionService.GetAnimal();
+            _appliancesService = electricalAppliancesService;
         }
 
         public int Compare(ElectricalAppliances x, ElectricalAppliances y)

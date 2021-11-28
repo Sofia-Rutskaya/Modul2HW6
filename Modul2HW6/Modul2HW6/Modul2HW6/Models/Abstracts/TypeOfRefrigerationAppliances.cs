@@ -8,5 +8,9 @@ namespace Modul2HW6.Models
 {
     public enum TypeOfRefrigerationAppliances
     {
+        SingleChamberRefrigerators,
+        TwoCompartmentRefrigerators,
+        MultiCompartmentRefrigerators,
+        SideBySideRefrigerators
     }
 }

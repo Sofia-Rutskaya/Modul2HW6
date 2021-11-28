@@ -9,6 +9,7 @@ namespace Modul2HW6.Models
     public abstract class RefrigerationAppliances : UnsupervisedProducts
     {
         public virtual int TemperatureInside { get; set; }
-        public virtual TypeOfRefrigerationAppliances Appliances { get; set; }
+        public virtual TypeOfRefrigerationAppliances Appliance { get; set; }
+        public virtual double Volume { get; set; }
     }
 }

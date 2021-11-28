@@ -1,4 +1,6 @@
-﻿namespace Modul2HW6.Models
+﻿using Modul2HW6.Models.Abstracts;
+
+namespace Modul2HW6.Models
 {
     public class Fridge : RefrigerationAppliances
     {
@@ -7,5 +9,7 @@
         public override double Сapacity { get; set; }
         public override bool HighProtectionAgainstElectricShock { get; set; } = true;
         public override int TemperatureInside { get; set; } = -18;
+        public override TypeOfRefrigerationAppliances Appliance { get; set; }
+        public override TypeAppliances Appliances { get; set; } = TypeAppliances.Fridge;
     }
 }
