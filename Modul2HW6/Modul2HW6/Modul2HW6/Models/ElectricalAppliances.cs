@@ -10,6 +10,6 @@ namespace Modul2HW6.Models
     {
         public abstract string Name { get; set; }
         public abstract double Weight { get; set; }
-        public virtual double Energy { get; set; }
+        public abstract double Сapacity { get; set; }
     }
 }

@@ -8,7 +8,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="Modul2HW6.Models.SupervisedProducts">
-    <Position X="14.25" Y="3.5" Width="1.5" />
+    <Position X="15.75" Y="3" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAIgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Models\SupervisedProducts.cs</FileName>
@@ -29,9 +29,9 @@
     </TypeIdentifier>
   </Class>
   <Class Name="Modul2HW6.Models.HeatingElectricalAppliances">
-    <Position X="12" Y="5.75" Width="1.5" />
+    <Position X="15" Y="5.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Models\HeatingElectricalAppliances.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -57,8 +57,8 @@
       <FileName>Models\LinenProcessingMachines.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Modul2HW6.Models.PersonalHygieneDevices" Collapsed="true">
-    <Position X="16.5" Y="4.75" Width="1.5" />
+  <Class Name="Modul2HW6.Models.PersonalHygieneDevices">
+    <Position X="18.5" Y="5.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAIAAAAA=</HashCode>
       <FileName>Models\PersonalHygieneDevices.cs</FileName>
@@ -86,18 +86,32 @@
       <FileName>Models\Fridge.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Modul2HW6.Models.WashingMashines" Collapsed="true">
+  <Class Name="Modul2HW6.Models.WashingMashines">
     <Position X="8.5" Y="8.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAYAAAAAAAQAACAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Models\WashingMashines.cs</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="Modul2HW6.Models.Dryer">
+    <Position X="10.75" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAQAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Dryer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Modul2HW6.Models.ElectricWaffleMaker" Collapsed="true">
+    <Position X="13.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAAAAAAAgAQAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\ElectricWaffleMaker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
   <Enum Name="Modul2HW6.Models.TypeOfRefrigerationAppliances" Collapsed="true">
     <Position X="3.25" Y="2" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Models\TypeOfRefrigerationAppliances.cs</FileName>
+      <FileName>Models\Abstracts\TypeOfRefrigerationAppliances.cs</FileName>
     </TypeIdentifier>
   </Enum>
   <Font Name="Segoe UI" Size="9" />

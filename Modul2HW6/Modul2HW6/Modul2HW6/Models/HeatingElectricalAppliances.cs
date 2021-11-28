@@ -8,5 +8,6 @@ namespace Modul2HW6.Models
 {
     public abstract class HeatingElectricalAppliances : SupervisedProducts
     {
+        public virtual bool NonStickCoating { get; set; }
     }
 }
