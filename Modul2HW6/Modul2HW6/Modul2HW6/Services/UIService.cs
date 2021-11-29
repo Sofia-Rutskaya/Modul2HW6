@@ -25,6 +25,7 @@ namespace Modul2HW6.Services
 
         void IUIService.Info()
         {
+            _message.Clear();
             _message.Append($"Power consumption - ");
             _message.Append($" {_countCapacity.GetCapacity()}");
             Console.WriteLine(_message);
