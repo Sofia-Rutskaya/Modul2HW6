@@ -1,18 +1,27 @@
 ﻿using System;
 using Microsoft.Extensions.DependencyInjection;
+using Modul2HW6.Services;
+using Modul2HW6.Services.Abstractions;
+using Modul2HW6.Providers;
+using Modul2HW6.Providers.Abstractions;
+using Modul2HW6.Extensions;
 
-namespace StyleCop
+namespace Modul2HW6
 {
     public class Program
     {
         public static void Main(string[] args)
         {
-            var serviseProvider = new ServiceCollection()
-                .AddSingleton<>
+            var serviceProvider = new ServiceCollection()
+                .AddSingleton<IElectricalAppliancesProviders, ElectricalAppliancesProviders>()
+                .AddSingleton<IElectricalAppliancesService, ElectricalAppliancesService>()
+                .AddSingleton<ICountCapacity, CountCapacity>()
+                .AddSingleton<IUIService, UIService>()
+                .AddTransient<Starter>()
+                .BuildServiceProvider();
 
-                /* 1. Добавить энам для приборов
-                   2. Паттерн фабрика
-                   3. конфиг джейсон*/
+            var start = serviceProvider.GetService<Starter>();
+            start.Run();
         }
     }
 }

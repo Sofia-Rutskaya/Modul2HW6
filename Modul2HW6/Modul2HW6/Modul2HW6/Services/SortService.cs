@@ -10,14 +10,6 @@ namespace Modul2HW6.Services
 {
     public class SortService : IComparer<ElectricalAppliances>
     {
-        private readonly ElectricalAppliances[] _electricalAppliances;
-        private readonly IElectricalAppliancesService _appliancesService;
-
-        public SortService(IElectricalAppliancesService electricalAppliancesService)
-        {
-            _appliancesService = electricalAppliancesService;
-        }
-
         public int Compare(ElectricalAppliances x, ElectricalAppliances y)
         {
             if (y == null || x == null)

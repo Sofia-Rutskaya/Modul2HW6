@@ -4,21 +4,29 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Modul2HW6.Services.Abstractions;
+using Modul2HW6.Providers;
+using Modul2HW6.Providers.Abstractions;
+using Modul2HW6.Models;
 
 namespace Modul2HW6.Services
 {
-    public class ElectricalAppliancesService
+    public class ElectricalAppliancesService : IElectricalAppliancesService
     {
-        private readonly SortService _sortService;
+        private readonly IElectricalAppliancesProviders _appliancesProviders;
 
-        public ElectricalAppliancesService()
+        public ElectricalAppliancesService(IElectricalAppliancesProviders appliancesProviders)
         {
-            _sortService = new SortService();
+            _appliancesProviders = appliancesProviders;
         }
 
-        public void SortSocket()
+        void IElectricalAppliancesService.SortSocket()
         {
-            Array.Sort();
+            Array.Sort(_appliancesProviders.GetApps(), new SortService());
+        }
+
+        ElectricalAppliances[] IElectricalAppliancesService.GetApps()
+        {
+            return _appliancesProviders.GetApps();
         }
     }
 }

@@ -10,7 +10,7 @@ namespace Modul2HW6.Extensions
 {
     public static class SearchExtensions
     {
-        public static ElectricalAppliances FindAppliance(this ElectricalAppliances[] appliances, string name, TypeAppliances type, double weight)
+        public static ElectricalAppliances FindAppliance(this ElectricalAppliances[] appliances, string name, TypeAppliances type)
         {
             for (var i = 0; i < appliances.Length; i++)
             {
@@ -19,7 +19,7 @@ namespace Modul2HW6.Extensions
                     return null;
                 }
 
-                if (appliances[i].Name == name && appliances[i].Appliances == type && appliances[i].Weight == weight)
+                if (appliances[i].Name == name && appliances[i].Appliances == type)
                 {
                     return appliances[i];
                 }
